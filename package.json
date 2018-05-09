@@ -34,7 +34,7 @@
     ]
   },
   "devDependencies": {
-    "@backtrack/core": "0.0.5"
+    "@backtrack/core": "0.0.7"
   },
   "dependencies": {
     "@backtrack/preset-style": "0.0.1",
