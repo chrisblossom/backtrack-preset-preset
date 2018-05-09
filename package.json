@@ -34,10 +34,10 @@
     ]
   },
   "devDependencies": {
-    "@backtrack/core": "^0.0.7"
+    "@backtrack/core": "^0.1.0"
   },
   "dependencies": {
-    "@backtrack/preset-style": "^0.0.1",
+    "@backtrack/preset-style": "^0.1.0",
     "eslint-plugin-node": "^6.0.1"
   }
 }
