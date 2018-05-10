@@ -1,6 +1,6 @@
 {
   "name": "@backtrack/preset-preset",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Backtrack preset to create Backtrack presets",
   "keywords": [
     "backtrack",
@@ -39,7 +39,7 @@
     ]
   },
   "devDependencies": {
-    "@backtrack/core": "^0.1.4"
+    "@backtrack/core": "^0.1.6"
   },
   "dependencies": {
     "@backtrack/preset-style": "^0.1.0",
