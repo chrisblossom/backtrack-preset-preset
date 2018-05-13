@@ -1,7 +1,7 @@
 {
   "name": "@backtrack/preset-preset",
   "version": "0.1.4",
-  "description": "Backtrack preset to create Backtrack presets",
+  "description": "Preset for backtrack to create backtrack presets",
   "keywords": [
     "backtrack",
     "preset"

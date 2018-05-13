@@ -6,7 +6,7 @@
 
 ## About
 
-[backtrack](https://github.com/chrisblossom/backtrack) preset that GENERAL-PACKAGE-DESCRIPTION-HERE.
+[`backtrack`](https://github.com/chrisblossom/backtrack) preset that GENERAL-PACKAGE-DESCRIPTION-HERE.
 
 ## Features
 
