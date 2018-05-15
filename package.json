@@ -7,9 +7,9 @@
     "preset"
   ],
   "license": "ISC",
-  "author": "Chris Blossom",
   "repository": "chrisblossom/backtrack-preset-preset",
   "homepage": "https://github.com/chrisblossom/backtrack-preset-preset",
+  "author": "Chris Blossom",
   "engines": {
     "node": ">=6.9.0",
     "npm": ">=3.10.10",
@@ -23,9 +23,9 @@
     "format": "backtrack format",
     "lint": "backtrack lint",
     "lint.fix": "backtrack lint.fix",
-    "precommit": "lint-staged",
-    "prepublishOnly": "npm run lint",
-    "prepush": "npm run lint"
+    "precommit": "backtrack precommit",
+    "prepublishOnly": "backtrack prepublishOnly",
+    "prepush": "backtrack prepush"
   },
   "lint-staged": {
     "*.{js,md,json}": [
@@ -39,10 +39,10 @@
     ]
   },
   "devDependencies": {
-    "@backtrack/core": "^0.1.9"
+    "@backtrack/core": "^0.1.11"
   },
   "dependencies": {
-    "@backtrack/preset-style": "^0.1.0",
+    "@backtrack/preset-style": "^0.1.3",
     "eslint-plugin-node": "^6.0.1",
     "read-pkg-up": "^3.0.0"
   }
