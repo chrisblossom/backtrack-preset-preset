@@ -196,6 +196,11 @@ Object {
       },
     },
     Object {
+      "scripts": Object {
+        "test.watch": "jest --watch",
+      },
+    },
+    Object {
       "engines": Object {
         "node": ">=6.9.0",
         "npm": ">=3.10.10",
@@ -232,9 +237,6 @@ Object {
   ],
   "test.update": Array [
     "jest --updateSnapshot",
-  ],
-  "test.watch": Array [
-    "jest --watch",
   ],
 }
 `;
