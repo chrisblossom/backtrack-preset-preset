@@ -160,7 +160,7 @@ Object {
       ],
       "hash": Object {
         "lib/files/CHANGELOG.md": "f55181dcff3c688e1b0b62f38b6e3187de326c22b4cc1eca3642bf63d6ea2552",
-        "lib/files/README.md": "4c36d57fc4cee53b1354e999e268f78be3bf06278fb46f37a74414dc34385521",
+        "lib/files/README.md": "7963a00147194f2b11715811c254a204471917b68397d82cd977397c0ea77816",
         "lib/files/editorconfig": "65c8c6dd2b55cd63f7a55d2ed77bb1344a345ed651c5b0a1cb689fa95753e63d",
         "lib/files/gitignore": "c204ca8726ae7f7e0aedcd854a49064fd5a2385de43318f58e8cd70e7dd5adbd",
         "lib/files/npmrc": "f92bfc9e4d622a5c53c3fcd1b61206420f8dc666db99e57560c33ad2fdc80a47",
