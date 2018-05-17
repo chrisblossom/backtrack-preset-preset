@@ -37,11 +37,6 @@
       "git add"
     ]
   },
-  "backtrack": {
-    "presets": [
-      "./"
-    ]
-  },
   "devDependencies": {
     "@backtrack/core": "^0.1.17"
   },
