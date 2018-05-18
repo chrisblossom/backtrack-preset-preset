@@ -82,7 +82,7 @@ Object {
         "wallaby.config.js",
       ],
       "hash": Object {
-        ".circleci/config.yml": "2bfa496bc22656ba584622896cbcc2fa55fc64737cf31d23606038d64f156b7b",
+        ".circleci/config.yml": "d261dece9929b1d97fe158048a0858d8fdfaf53303c81fb784fd617d82acaf4f",
         ".editorconfig": "65c8c6dd2b55cd63f7a55d2ed77bb1344a345ed651c5b0a1cb689fa95753e63d",
         ".eslintignore": "7b358a16955be6b9b56add38102fccd293af540701ac91cd5020bfe37fe3fbb3",
         ".eslintrc.js": "0de8c62f28870b2afeb3eb58a5a9a106a96c9181aa9478f71760bb155bb4a205",
@@ -93,7 +93,7 @@ Object {
         ".yarnrc": "e4bdd4d0bcb6dd15e5585dc6fa2c90780abaf4904305afb12d9af02000e070f3",
         "CHANGELOG.md": "f55181dcff3c688e1b0b62f38b6e3187de326c22b4cc1eca3642bf63d6ea2552",
         "README.md": "c64f2712e842ded32c76f1352ddc717332f8017090e183f865f790cc9d59d7f9",
-        "appveyor.yml": "f6fc53987d51355dcbb95ea36a3da2db56666cf2a4433bb515a01cc1c1aebf8c",
+        "appveyor.yml": "9d33ff9a3d71fe4027204552cb66e29277062e5fd12d2e9f334cc07d8f8fd30a",
         "jest.config.js": "2dfc22f99102a3d4d2335ad31b24e0902a3b81348aa74acf270d9c88ed0a2bf3",
         "lib/preset-preset.js": "f79a075f7f404f5ef85293722733c6c925c43137c976a3e6bf310029cf6458ff",
         "lib/preset-preset.test.js": "e5f471c0fceacae79446f5cf792e694bf563b2ff93664935c91c723039d0f55e",
@@ -168,8 +168,8 @@ Object {
         "lib/files/package-entry.js": "ignoreUpdates",
         "lib/files/wallaby.config.js": "b79a89efd0484c2aba8477197056e4ae331dc6a0d533e050edd99d89630cb78f",
         "lib/files/yarnrc": "e4bdd4d0bcb6dd15e5585dc6fa2c90780abaf4904305afb12d9af02000e070f3",
-        "node_modules/@backtrack/preset-jest/lib/files/appveyor.yml": "f6fc53987d51355dcbb95ea36a3da2db56666cf2a4433bb515a01cc1c1aebf8c",
-        "node_modules/@backtrack/preset-jest/lib/files/circleci-v2.yml": "2bfa496bc22656ba584622896cbcc2fa55fc64737cf31d23606038d64f156b7b",
+        "node_modules/@backtrack/preset-jest/lib/files/appveyor.yml": "9d33ff9a3d71fe4027204552cb66e29277062e5fd12d2e9f334cc07d8f8fd30a",
+        "node_modules/@backtrack/preset-jest/lib/files/circleci-v2.yml": "d261dece9929b1d97fe158048a0858d8fdfaf53303c81fb784fd617d82acaf4f",
         "node_modules/@backtrack/preset-jest/lib/files/jest.js": "2dfc22f99102a3d4d2335ad31b24e0902a3b81348aa74acf270d9c88ed0a2bf3",
         "node_modules/@backtrack/preset-style/lib/files/eslint.js": "0de8c62f28870b2afeb3eb58a5a9a106a96c9181aa9478f71760bb155bb4a205",
         "node_modules/@backtrack/preset-style/lib/files/ignore": "7b358a16955be6b9b56add38102fccd293af540701ac91cd5020bfe37fe3fbb3",
@@ -197,6 +197,7 @@ Object {
     },
     Object {
       "scripts": Object {
+        "test.update": "jest --updateSnapshot",
         "test.watch": "jest --watch",
       },
     },
@@ -233,10 +234,7 @@ Object {
   ],
   "test.ci": Array [
     "jest --passWithNoTests --coverage",
-    "cat ./coverage/lcov.info | coveralls",
-  ],
-  "test.update": Array [
-    "jest --updateSnapshot",
+    "<PROJECT_ROOT>/node_modules/@backtrack/preset-jest/lib/send-coverage.js",
   ],
 }
 `;
