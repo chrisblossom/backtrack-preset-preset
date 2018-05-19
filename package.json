@@ -28,6 +28,7 @@
     "prepush": "backtrack prepush",
     "test": "backtrack test",
     "test.ci": "backtrack test.ci",
+    "test.ci-pretest": "backtrack test.ci-pretest",
     "test.update": "jest --updateSnapshot",
     "test.watch": "jest --watch"
   },
@@ -41,7 +42,7 @@
     "@backtrack/core": "^0.1.17"
   },
   "dependencies": {
-    "@backtrack/preset-jest": "^0.1.16",
+    "@backtrack/preset-jest": "^0.1.17",
     "@backtrack/preset-style": "^0.1.5",
     "eslint-plugin-node": "^6.0.1",
     "read-pkg-up": "^3.0.0"
