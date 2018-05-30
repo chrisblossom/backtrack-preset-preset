@@ -221,7 +221,10 @@ Object {
   ],
   "test.ci": Array [
     "jest --passWithNoTests --coverage",
-    "<PROJECT_ROOT>/node_modules/@backtrack/preset-jest/lib/send-coverage.js",
+    Object {
+      "name": "coveralls",
+      "task": "<PROJECT_ROOT>/node_modules/@backtrack/preset-jest/lib/send-coverage.js",
+    },
   ],
   "test.ci-pretest": Array [
     [Function noop],
