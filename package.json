@@ -43,9 +43,9 @@
   },
   "dependencies": {
     "@backtrack/jest-serializer-preset": "^0.1.1",
-    "@backtrack/preset-jest": "^0.2.0",
+    "@backtrack/preset-jest": "^0.3.0",
     "@backtrack/preset-style": "^0.1.6",
-    "eslint-plugin-node": "^6.0.1",
-    "read-pkg-up": "^3.0.0"
+    "eslint-plugin-node": "^7.0.1",
+    "read-pkg-up": "^4.0.0"
   }
 }

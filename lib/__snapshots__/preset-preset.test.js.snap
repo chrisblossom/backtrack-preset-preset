@@ -222,8 +222,8 @@ Object {
   "test.ci": Array [
     "jest --passWithNoTests --coverage",
     Object {
-      "name": "coveralls",
-      "task": "<PROJECT_ROOT>/node_modules/@backtrack/preset-jest/lib/send-coverage.js",
+      "name": "codecov",
+      "task": "codecov",
     },
   ],
   "test.ci-pretest": Array [
