@@ -1,12 +1,12 @@
 {
   "name": "@backtrack/preset-preset",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Preset for backtrack to create backtrack presets",
   "keywords": [
     "backtrack",
     "preset"
   ],
-  "license": "ISC",
+  "license": "MIT",
   "repository": "chrisblossom/backtrack-preset-preset",
   "homepage": "https://github.com/chrisblossom/backtrack-preset-preset",
   "author": "Chris Blossom",
