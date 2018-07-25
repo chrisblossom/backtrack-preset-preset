@@ -192,7 +192,6 @@ Object {
       "engines": Object {
         "node": ">=6.9.0",
         "npm": ">=3.10.10",
-        "yarn": ">=1.6.0",
       },
       "files": Array [
         "lib/",
@@ -220,7 +219,7 @@ Object {
     "jest --passWithNoTests",
   ],
   "test.ci": Array [
-    "jest --passWithNoTests --coverage",
+    "jest --passWithNoTests --coverage --maxWorkers 2",
     Object {
       "name": "codecov",
       "task": "codecov",

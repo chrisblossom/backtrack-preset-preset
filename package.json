@@ -12,8 +12,7 @@
   "author": "Chris Blossom",
   "engines": {
     "node": ">=6.9.0",
-    "npm": ">=3.10.10",
-    "yarn": ">=1.6.0"
+    "npm": ">=3.10.10"
   },
   "files": [
     "lib/"
@@ -39,12 +38,12 @@
     ]
   },
   "devDependencies": {
-    "@backtrack/core": "^0.1.18"
+    "@backtrack/core": "^0.1.19"
   },
   "dependencies": {
-    "@backtrack/jest-serializer-preset": "^0.1.1",
-    "@backtrack/preset-jest": "^0.3.0",
-    "@backtrack/preset-style": "^0.1.6",
+    "@backtrack/jest-serializer-preset": "^0.1.2",
+    "@backtrack/preset-jest": "^0.3.1",
+    "@backtrack/preset-style": "^0.1.7",
     "eslint-plugin-node": "^7.0.1",
     "read-pkg-up": "^4.0.0"
   }
