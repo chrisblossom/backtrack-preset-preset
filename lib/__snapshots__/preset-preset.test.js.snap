@@ -196,6 +196,7 @@ Object {
       "files": Array [
         "lib/",
       ],
+      "license": "MIT",
       "main": "lib/preset-preset.js",
     },
   ],
