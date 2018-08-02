@@ -38,6 +38,7 @@ Object {
         ".eslintignore": "<PROJECT_ROOT>/.eslintignore",
         ".eslintrc.js": "<PROJECT_ROOT>/.eslintrc.js",
         ".gitignore": "<PROJECT_ROOT>/.gitignore",
+        ".lintstagedrc.js": "<PROJECT_ROOT>/.lintstagedrc.js",
         ".npmrc": "<PROJECT_ROOT>/.npmrc",
         ".prettierignore": "<PROJECT_ROOT>/.prettierignore",
         ".prettierrc.js": "<PROJECT_ROOT>/.prettierrc.js",
@@ -56,6 +57,7 @@ Object {
         ".eslintignore": false,
         ".eslintrc.js": false,
         ".gitignore": false,
+        ".lintstagedrc.js": false,
         ".npmrc": false,
         ".prettierignore": false,
         ".prettierrc.js": false,
@@ -73,6 +75,7 @@ Object {
         ".eslintignore",
         ".prettierrc.js",
         ".prettierignore",
+        ".lintstagedrc.js",
         "jest.config.js",
         ".circleci/config.yml",
         "appveyor.yml",
@@ -92,6 +95,7 @@ Object {
         ".eslintignore": false,
         ".eslintrc.js": false,
         ".gitignore": false,
+        ".lintstagedrc.js": false,
         ".npmrc": false,
         ".prettierignore": false,
         ".prettierrc.js": false,
@@ -125,6 +129,7 @@ Object {
         "node_modules/@backtrack/preset-jest/lib/files/jest.js": "<PROJECT_ROOT>/node_modules/@backtrack/preset-jest/lib/files/jest.js",
         "node_modules/@backtrack/preset-style/lib/files/eslint.js": "<PROJECT_ROOT>/node_modules/@backtrack/preset-style/lib/files/eslint.js",
         "node_modules/@backtrack/preset-style/lib/files/ignore": "<PROJECT_ROOT>/node_modules/@backtrack/preset-style/lib/files/ignore",
+        "node_modules/@backtrack/preset-style/lib/files/lint-staged.js": "<PROJECT_ROOT>/node_modules/@backtrack/preset-style/lib/files/lint-staged.js",
         "node_modules/@backtrack/preset-style/lib/files/prettier.js": "<PROJECT_ROOT>/node_modules/@backtrack/preset-style/lib/files/prettier.js",
       },
       "files": Array [
@@ -132,6 +137,7 @@ Object {
         "node_modules/@backtrack/preset-style/lib/files/ignore",
         "node_modules/@backtrack/preset-style/lib/files/prettier.js",
         "node_modules/@backtrack/preset-style/lib/files/ignore",
+        "node_modules/@backtrack/preset-style/lib/files/lint-staged.js",
         "node_modules/@backtrack/preset-jest/lib/files/jest.js",
         "node_modules/@backtrack/preset-jest/lib/files/circleci-v2.yml",
         "node_modules/@backtrack/preset-jest/lib/files/appveyor.yml",
@@ -160,12 +166,13 @@ Object {
         "node_modules/@backtrack/preset-jest/lib/files/jest.js": "2dfc22f99102a3d4d2335ad31b24e0902a3b81348aa74acf270d9c88ed0a2bf3",
         "node_modules/@backtrack/preset-style/lib/files/eslint.js": "0de8c62f28870b2afeb3eb58a5a9a106a96c9181aa9478f71760bb155bb4a205",
         "node_modules/@backtrack/preset-style/lib/files/ignore": "7b358a16955be6b9b56add38102fccd293af540701ac91cd5020bfe37fe3fbb3",
+        "node_modules/@backtrack/preset-style/lib/files/lint-staged.js": "c8dd8df94d9c8de4503bc1ab4b4ea12c7450d76ebbd50c9b4c3c7975609e28da",
         "node_modules/@backtrack/preset-style/lib/files/prettier.js": "d30f794e5447d44ad2ed8a1123bc15fdaf6775ad7776f3c1411e3b965f3d3a20",
       },
     },
   },
   "format": Array [
-    "prettier **/*.{js,md,json} --write",
+    "prettier **/*.{js,mjs,jsx,ts,tsx,json,scss,less,css,md,yml,yaml} --write",
   ],
   "lint": Array [
     "eslint .",
@@ -174,14 +181,6 @@ Object {
     "eslint --fix .",
   ],
   "packageJson": Array [
-    Object {
-      "lint-staged": Object {
-        "*.{js,md,json}": Array [
-          "prettier --write",
-          "git add",
-        ],
-      },
-    },
     Object {
       "scripts": Object {
         "test.update": "jest --updateSnapshot",
