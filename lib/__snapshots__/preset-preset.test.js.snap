@@ -162,7 +162,7 @@ Object {
         "lib/files/wallaby.config.js": "b79a89efd0484c2aba8477197056e4ae331dc6a0d533e050edd99d89630cb78f",
         "lib/files/yarnrc": "e4bdd4d0bcb6dd15e5585dc6fa2c90780abaf4904305afb12d9af02000e070f3",
         "node_modules/@backtrack/preset-jest/lib/files/appveyor-6+.yml": "251406424b8cb49b1a8858ef7eb521ae57856964625daed85b591692e8f98e15",
-        "node_modules/@backtrack/preset-jest/lib/files/circleci-6+.yml": "d7ada4fec94d99d14f1cfc79160392b0c5f0499f9dd9ae49fd2fd5bc0736bb4c",
+        "node_modules/@backtrack/preset-jest/lib/files/circleci-6+.yml": "f8afa0de22d1ce5ee659b86993cf898e85b383599dab0f06ef052d1f4510ef37",
         "node_modules/@backtrack/preset-jest/lib/files/jest-library.js": "322dd136d43514064c38fdf8cd999d6511d83af8efbb35d8d355a3f35937c6c4",
         "node_modules/@backtrack/preset-style/lib/files/eslint.js": "0de8c62f28870b2afeb3eb58a5a9a106a96c9181aa9478f71760bb155bb4a205",
         "node_modules/@backtrack/preset-style/lib/files/ignore": "7b358a16955be6b9b56add38102fccd293af540701ac91cd5020bfe37fe3fbb3",
