@@ -5,16 +5,9 @@ Object {
   "config": Array [
     Object {
       "eslint": Object {
-        "overrides": Array [
-          Object {
-            "files": "lib/files/**/*.{js,ts}",
-            "rules": Object {
-              "import/no-extraneous-dependencies": "off",
-              "import/no-unresolved": "off",
-            },
-          },
-        ],
         "rules": Object {
+          "import/no-extraneous-dependencies": "off",
+          "import/no-unresolved": "off",
           "node/no-unpublished-require": "off",
         },
       },
