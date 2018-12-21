@@ -20,11 +20,11 @@
   "main": "lib/preset-preset.js",
   "scripts": {
     "format": "backtrack format",
+    "git-pre-commit": "backtrack git-pre-commit",
+    "git-pre-push": "backtrack git-pre-push",
     "lint": "backtrack lint",
     "lint.fix": "backtrack lint.fix",
-    "precommit": "backtrack precommit",
     "prepublishOnly": "backtrack prepublishOnly",
-    "prepush": "backtrack prepush",
     "test": "backtrack test",
     "test.ci": "backtrack test.ci",
     "test.ci-pretest": "backtrack test.ci-pretest",
@@ -36,9 +36,8 @@
   },
   "dependencies": {
     "@backtrack/jest-serializer-preset": "^0.1.4",
-    "@backtrack/preset-jest": "^0.3.7",
-    "@backtrack/preset-style": "^0.1.13",
-    "eslint-plugin-node": "^8.0.0",
+    "@backtrack/preset-jest": "^0.3.8",
+    "@backtrack/preset-style": "^0.1.17",
     "read-pkg-up": "^4.0.0"
   }
 }
