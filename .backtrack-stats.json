@@ -22,7 +22,7 @@
             "jest.config.js": "322dd136d43514064c38fdf8cd999d6511d83af8efbb35d8d355a3f35937c6c4",
             "lib/preset-preset.js": "ignoreUpdates",
             "lib/preset-preset.test.js": "ignoreUpdates",
-            "wallaby.config.js": "9ba161416002cd5d8a171f0b92f51d80cb6e559fcaaaa32835caec84de99ae6f"
+            "wallaby.config.js": "856da559de8a3bbabad242d90633e69852381073cba49fcdc1b8985da41cfd28"
         }
     },
     "packageJson": {
