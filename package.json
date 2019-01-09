@@ -36,8 +36,8 @@
   },
   "dependencies": {
     "@backtrack/jest-serializer-preset": "^0.1.4",
-    "@backtrack/preset-jest": "^0.3.9",
-    "@backtrack/preset-style": "^0.1.17",
+    "@backtrack/preset-jest": "^0.4.1",
+    "@backtrack/preset-style": "^0.1.18",
     "read-pkg-up": "^4.0.0"
   }
 }
