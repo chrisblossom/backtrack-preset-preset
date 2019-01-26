@@ -28,7 +28,7 @@
     "test": "backtrack test",
     "test.ci": "backtrack test.ci",
     "test.ci-pretest": "backtrack test.ci-pretest",
-    "test.update": "jest --updateSnapshot",
+    "test.update": "jest --update-snapshot",
     "test.watch": "jest --watch"
   },
   "devDependencies": {
@@ -36,7 +36,7 @@
   },
   "dependencies": {
     "@backtrack/jest-serializer-preset": "^0.1.4",
-    "@backtrack/preset-node-module": "^0.5.1",
+    "@backtrack/preset-node-module": "^0.5.5",
     "read-pkg": "^4.0.1"
   }
 }

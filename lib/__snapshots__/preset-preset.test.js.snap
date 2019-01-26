@@ -155,8 +155,8 @@ Object {
         "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "f7b6f2abb505e7b45fb028edb1a032b9fb7c997e4d563fdd0567beb582f8da76",
         "node_modules/@backtrack/preset-jest/lib/files/appveyor-6+.yml": "251406424b8cb49b1a8858ef7eb521ae57856964625daed85b591692e8f98e15",
         "node_modules/@backtrack/preset-jest/lib/files/circleci-6+.yml": "f8afa0de22d1ce5ee659b86993cf898e85b383599dab0f06ef052d1f4510ef37",
-        "node_modules/@backtrack/preset-jest/lib/files/jest.js": "89b921f7f379662d979221ac8124f85a5c2443a66f5d6922babf18e67b0f5727",
-        "node_modules/@backtrack/preset-jest/lib/files/wallaby.js": "fb18cd12a40eb4e2e311d8ea67b1c6a04eb2af3486e1363419eff4cd36a39cc8",
+        "node_modules/@backtrack/preset-jest/lib/files/jest.js": "593effcf28fda7ec31763c898d739f665436e659b7976864ce78885282136401",
+        "node_modules/@backtrack/preset-jest/lib/files/wallaby.js": "2656c547b42344e044e4a04d211059882aa4ab616f46051bbf994a018be2b9ec",
         "node_modules/@backtrack/preset-node-module/lib/files/CHANGELOG.md": "ignoreUpdates",
         "node_modules/@backtrack/preset-node-module/lib/files/editorconfig": "65c8c6dd2b55cd63f7a55d2ed77bb1344a345ed651c5b0a1cb689fa95753e63d",
         "node_modules/@backtrack/preset-node-module/lib/files/gitignore": "715c4f869d50d4e11254a97441df027e6cabd50612d10e844e5efba4078f484f",
@@ -193,7 +193,7 @@ Object {
   "packageJson": Array [
     Object {
       "scripts": Object {
-        "test.update": "jest --updateSnapshot",
+        "test.update": "jest --update-snapshot",
         "test.watch": "jest --watch",
       },
     },
@@ -220,10 +220,10 @@ Object {
     "@backtrack/preset-style": "<PROJECT_ROOT>/node_modules/@backtrack/preset-style/lib",
   },
   "test": Array [
-    "jest --passWithNoTests",
+    "jest --pass-with-no-tests",
   ],
   "test.ci": Array [
-    "jest --passWithNoTests --ci --no-cache --coverage --maxWorkers 2",
+    "jest --pass-with-no-tests --ci --no-cache --coverage --max-workers 2",
     Object {
       "name": "codecov",
       "task": "codecov",
