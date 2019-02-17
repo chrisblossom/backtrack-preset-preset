@@ -11,8 +11,7 @@
   "homepage": "https://github.com/chrisblossom/backtrack-preset-preset",
   "author": "Chris Blossom",
   "engines": {
-    "node": ">=6.9.0",
-    "npm": ">=3.10.10"
+    "node": ">=6.9.0"
   },
   "files": [
     "lib/"
@@ -32,11 +31,11 @@
     "test.watch": "jest --watch"
   },
   "devDependencies": {
-    "@backtrack/core": "^0.1.23"
+    "@backtrack/core": "^0.1.25"
   },
   "dependencies": {
     "@backtrack/jest-serializer-preset": "^0.1.4",
-    "@backtrack/preset-node-module": "^0.5.5",
+    "@backtrack/preset-node": "^0.1.0",
     "read-pkg": "^4.0.1"
   }
 }
