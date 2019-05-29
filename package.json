@@ -7,6 +7,7 @@
     "preset"
   ],
   "license": "MIT",
+  "private": false,
   "repository": "chrisblossom/backtrack-preset-preset",
   "homepage": "https://github.com/chrisblossom/backtrack-preset-preset",
   "author": "Chris Blossom",
@@ -24,6 +25,7 @@
     "lint": "backtrack lint",
     "lint.fix": "backtrack lint.fix",
     "prepublishOnly": "backtrack prepublishOnly",
+    "release": "backtrack release",
     "test": "backtrack test",
     "test.ci": "backtrack test.ci",
     "test.ci-pretest": "backtrack test.ci-pretest",
@@ -31,14 +33,14 @@
     "test.watch": "jest --watch"
   },
   "peerDependencies": {
-    "@backtrack/core": ">=0.2.0"
+    "@backtrack/core": ">=0.2.1"
   },
   "devDependencies": {
-    "@backtrack/core": "^0.2.0"
+    "@backtrack/core": "^0.2.1"
   },
   "dependencies": {
     "@backtrack/jest-serializer-preset": "^0.1.4",
-    "@backtrack/preset-node": "^0.4.0",
+    "@backtrack/preset-node": "^0.4.6",
     "read-pkg": "^5.1.1"
   }
 }
