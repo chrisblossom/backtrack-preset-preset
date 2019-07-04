@@ -30,6 +30,6 @@
 'use strict';
 
 module.exports = {
-    presets: ['PACKAGE-ID'],
+	presets: ['PACKAGE-ID'],
 };
 ```
