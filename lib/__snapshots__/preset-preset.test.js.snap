@@ -10,6 +10,7 @@ Object {
           "arrow-body-style": "off",
           "import/no-extraneous-dependencies": "off",
           "import/no-unresolved": "off",
+          "jest/prefer-inline-snapshots": "off",
           "node/no-unpublished-require": "off",
         },
       },
