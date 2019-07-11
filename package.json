@@ -19,6 +19,7 @@
   ],
   "main": "lib/preset-preset.js",
   "scripts": {
+    "check.all": "backtrack check.all",
     "format": "backtrack format",
     "git-pre-commit": "backtrack git-pre-commit",
     "git-pre-push": "backtrack git-pre-push",
@@ -40,7 +41,7 @@
   },
   "dependencies": {
     "@backtrack/jest-serializer-preset": "^0.1.4",
-    "@backtrack/preset-node": "^0.6.1",
+    "@backtrack/preset-node": "^0.6.2",
     "read-pkg": "^5.1.1"
   }
 }

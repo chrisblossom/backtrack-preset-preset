@@ -2,6 +2,10 @@
 
 exports[`preset returns expected config 1`] = `
 Object {
+  "check.all": Array [
+    "backtrack lint",
+    "backtrack test",
+  ],
   "config": Array [
     Object {},
     Object {
@@ -69,6 +73,7 @@ Object {
       "files": Array [
         ".eslintignore",
         ".prettierignore",
+        ".editorconfig",
         ".lintstagedrc.js",
         ".eslintrc.js",
         ".prettierrc.js",
@@ -77,7 +82,6 @@ Object {
         "wallaby.config.js",
         "jest.config.js",
         "appveyor.yml",
-        ".editorconfig",
         ".gitignore",
         ".gitattributes",
         ".npmrc",
@@ -123,12 +127,12 @@ Object {
         "node_modules/@backtrack/preset-jest/lib/files/circleci-8+.yml": "<PROJECT_ROOT>/node_modules/@backtrack/preset-jest/lib/files/circleci-8+.yml",
         "node_modules/@backtrack/preset-jest/lib/files/jest.js": "<PROJECT_ROOT>/node_modules/@backtrack/preset-jest/lib/files/jest.js",
         "node_modules/@backtrack/preset-jest/lib/files/wallaby.js": "<PROJECT_ROOT>/node_modules/@backtrack/preset-jest/lib/files/wallaby.js",
-        "node_modules/@backtrack/preset-node/lib/files/editorconfig": "<PROJECT_ROOT>/node_modules/@backtrack/preset-node/lib/files/editorconfig",
         "node_modules/@backtrack/preset-node/lib/files/gitattributes": "<PROJECT_ROOT>/node_modules/@backtrack/preset-node/lib/files/gitattributes",
         "node_modules/@backtrack/preset-node/lib/files/gitignore-module": "<PROJECT_ROOT>/node_modules/@backtrack/preset-node/lib/files/gitignore-module",
         "node_modules/@backtrack/preset-node/lib/files/np-config.js": "<PROJECT_ROOT>/node_modules/@backtrack/preset-node/lib/files/np-config.js",
         "node_modules/@backtrack/preset-node/lib/files/npmrc-module": "<PROJECT_ROOT>/node_modules/@backtrack/preset-node/lib/files/npmrc-module",
         "node_modules/@backtrack/preset-node/lib/files/yarnrc-module": "<PROJECT_ROOT>/node_modules/@backtrack/preset-node/lib/files/yarnrc-module",
+        "node_modules/@backtrack/preset-style/lib/files/editorconfig": "<PROJECT_ROOT>/node_modules/@backtrack/preset-style/lib/files/editorconfig",
         "node_modules/@backtrack/preset-style/lib/files/eslint-node.js": "<PROJECT_ROOT>/node_modules/@backtrack/preset-style/lib/files/eslint-node.js",
         "node_modules/@backtrack/preset-style/lib/files/ignore": "<PROJECT_ROOT>/node_modules/@backtrack/preset-style/lib/files/ignore",
         "node_modules/@backtrack/preset-style/lib/files/lint-staged.js": "<PROJECT_ROOT>/node_modules/@backtrack/preset-style/lib/files/lint-staged.js",
@@ -137,6 +141,7 @@ Object {
       "files": Array [
         "node_modules/@backtrack/preset-style/lib/files/ignore",
         "node_modules/@backtrack/preset-style/lib/files/ignore",
+        "node_modules/@backtrack/preset-style/lib/files/editorconfig",
         "node_modules/@backtrack/preset-style/lib/files/lint-staged.js",
         "node_modules/@backtrack/preset-style/lib/files/eslint-node.js",
         "node_modules/@backtrack/preset-style/lib/files/prettier.js",
@@ -145,7 +150,6 @@ Object {
         "node_modules/@backtrack/preset-jest/lib/files/wallaby.js",
         "node_modules/@backtrack/preset-jest/lib/files/jest.js",
         "node_modules/@backtrack/preset-jest/lib/files/appveyor-8+.yml",
-        "node_modules/@backtrack/preset-node/lib/files/editorconfig",
         "node_modules/@backtrack/preset-node/lib/files/gitignore-module",
         "node_modules/@backtrack/preset-node/lib/files/gitattributes",
         "node_modules/@backtrack/preset-node/lib/files/npmrc-module",
@@ -159,21 +163,21 @@ Object {
         "lib/files/README.md": "ignoreUpdates",
         "lib/files/package-entry-test.js": "ignoreUpdates",
         "lib/files/package-entry.js": "ignoreUpdates",
-        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "d41c387b0d3f16730829f444ef7bc0665cc52e92847c548c5166ebb7597bc69a",
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "b242a598aa796a3ac2dc5cc64b83ba86ac5260414a591bb09b5ab6b4f7c027fe",
         "node_modules/@backtrack/preset-jest/lib/files/appveyor-8+.yml": "5dcc891d04c8131f9a5782771c5fecd04af5a6cc6c22f4090a63b3b4583bafaa",
         "node_modules/@backtrack/preset-jest/lib/files/circleci-8+.yml": "ed700b1e1ed715aaa370a41a40f8236df1886fa35913c644e8cc82580997e327",
-        "node_modules/@backtrack/preset-jest/lib/files/jest.js": "996d179962a5518ff433880e9d7586c4d960c66112aa28698801d73347af4d00",
-        "node_modules/@backtrack/preset-jest/lib/files/wallaby.js": "dda2a86d53bf59d3f34b9e3ca52791f1a9557fa06acd76b1e91f68865f1fbe32",
-        "node_modules/@backtrack/preset-node/lib/files/editorconfig": "1931e1173b865e8d600576d904aed77b95e5a6044c26d1743dd00db9313f88cb",
+        "node_modules/@backtrack/preset-jest/lib/files/jest.js": "849190b5138d25fa0849678fb4a3c818fb0dccffbe6a86732713a18c4cc06b6d",
+        "node_modules/@backtrack/preset-jest/lib/files/wallaby.js": "1685bb89c5e60c303b9a319b3ee52766bfc0c0b7cf5a2c0e5f8e67a0e8febeba",
         "node_modules/@backtrack/preset-node/lib/files/gitattributes": "f511b169e2a0b7529ac2887dffad3b04a16b954209edf18fec7f8911a81ad17d",
         "node_modules/@backtrack/preset-node/lib/files/gitignore-module": "8791c419e79de53e5c2eefa59ab16b52b5413bd08da46be94e9e6cc3153a17a0",
-        "node_modules/@backtrack/preset-node/lib/files/np-config.js": "2057ff5c26393f3bf0b8873dd72eeaa60feabc4f04142ac70a5899c8d1c1451b",
+        "node_modules/@backtrack/preset-node/lib/files/np-config.js": "f1e82191dea83526e85a98a48c5b974b59e6e99293e864d0a1d02d5999e6a675",
         "node_modules/@backtrack/preset-node/lib/files/npmrc-module": "f535d8452d57a9d969bc54c2eaa831f3e20ccb5c3dbeeabc6f613d27a4b5a28a",
         "node_modules/@backtrack/preset-node/lib/files/yarnrc-module": "feed5a1b1413c2d27507ed09e7d1c21fb40e0f8aca947c0620793b7e187e8ba4",
-        "node_modules/@backtrack/preset-style/lib/files/eslint-node.js": "d29084d1d0cbcc3982525eae881e6e797d1c64be4c6937ab43fb134750c6207d",
-        "node_modules/@backtrack/preset-style/lib/files/ignore": "df678e7a458aba93c115564cfd4a701bdf4397e943de8745d37f2798c1dc5c11",
-        "node_modules/@backtrack/preset-style/lib/files/lint-staged.js": "5398a6883c9332018fa32fdac8989989eef1eca27c0e2d92ccf35bb13381e7e7",
-        "node_modules/@backtrack/preset-style/lib/files/prettier.js": "d629966276ea3348d610673fc3a6c274411cb15543870ccadba258ffbf90346a",
+        "node_modules/@backtrack/preset-style/lib/files/editorconfig": "0b9d5ddd3464226f6c635fce4d987914b5a03ffcfebb6425c7e91eb72bb0299f",
+        "node_modules/@backtrack/preset-style/lib/files/eslint-node.js": "00aed0fb026ab32804ce28d202a5e8ff43d5ef238ab938774c34b19fd6c1047b",
+        "node_modules/@backtrack/preset-style/lib/files/ignore": "73a2c88868e2d07e67d56a7678a7cff9b19d375996830bc055e5048a3a995c7f",
+        "node_modules/@backtrack/preset-style/lib/files/lint-staged.js": "f7164bc680954569d44960627d963bfcc542cd9f7635a239b30ca077a5884abd",
+        "node_modules/@backtrack/preset-style/lib/files/prettier.js": "f4a7656974038636db7c4488f4953c6c6179975b17cda28b2b1b2792766ae512",
       },
     },
   },
@@ -189,6 +193,7 @@ Object {
   "git-pre-push": Array [
     [Function noop],
     "backtrack lint",
+    "prettier \\"**/*.{js,mjs,jsx,ts,tsx,json,scss,less,css,md,yml,yaml}\\" --check",
     [Function noop],
     "backtrack test",
   ],
@@ -219,6 +224,7 @@ Object {
   ],
   "prepublishOnly": Array [
     "backtrack lint",
+    "prettier \\"**/*.{js,mjs,jsx,ts,tsx,json,scss,less,css,md,yml,yaml}\\" --check",
   ],
   "release": Array [
     "np",
