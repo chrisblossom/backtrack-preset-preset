@@ -4,6 +4,7 @@ exports[`preset returns expected config 1`] = `
 Object {
   "check.all": Array [
     "backtrack lint",
+    "prettier \\"**/*.{js,mjs,jsx,ts,tsx,json,scss,less,css,md,yml,yaml}\\" --check",
     "backtrack test",
   ],
   "config": Array [
@@ -208,7 +209,7 @@ Object {
     Object {
       "scripts": Object {
         "test.update": "jest --update-snapshot",
-        "test.watch": "jest --watch",
+        "test.watch": "jest --watch --pass-with-no-tests",
       },
     },
     Object {
@@ -240,7 +241,7 @@ Object {
     "jest --pass-with-no-tests",
   ],
   "test.ci": Array [
-    "jest --pass-with-no-tests --ci --no-cache --coverage --max-workers 2",
+    "jest --ci --no-cache --coverage --max-workers 2",
     Object {
       "name": "codecov",
       "task": "codecov",
