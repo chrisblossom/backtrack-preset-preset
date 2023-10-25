@@ -1,17 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`preset returns expected config 1`] = `
-Object {
-  "check.all": Array [
+{
+  "check.all": [
     "backtrack lint",
-    "prettier \\"**/*.{js,mjs,jsx,ts,tsx,json,scss,less,css,md,yml,yaml}\\" --check",
+    "prettier "**/*" --ignore-unknown --check",
     "backtrack test",
   ],
-  "config": Array [
-    Object {},
-    Object {
-      "eslint": Object {
-        "rules": Object {
+  "config": [
+    {
+      "eslint": {
+        "rules": {
           "arrow-body-style": "off",
           "import/no-extraneous-dependencies": "off",
           "import/no-unresolved": "off",
@@ -19,235 +18,240 @@ Object {
           "node/no-unpublished-require": "off",
         },
       },
-      "jest": Object {
-        "snapshotSerializers": Array [
+      "jest": {
+        "snapshotSerializers": [
           "<PROJECT_ROOT>/node_modules/@backtrack/jest-serializer-preset/dist/jest-serializer-preset.js",
         ],
       },
       "wallaby": [Function wallaby],
     },
   ],
-  "files": Object {
-    "dest": Object {
-      "absolute": Object {
+  "files": {
+    "dest": {
+      "absolute": {
         ".circleci/config.yml": "<PROJECT_ROOT>/.circleci/config.yml",
         ".editorconfig": "<PROJECT_ROOT>/.editorconfig",
         ".eslintignore": "<PROJECT_ROOT>/.eslintignore",
-        ".eslintrc.js": "<PROJECT_ROOT>/.eslintrc.js",
+        ".eslintrc.cjs": "<PROJECT_ROOT>/.eslintrc.cjs",
         ".gitattributes": "<PROJECT_ROOT>/.gitattributes",
         ".gitignore": "<PROJECT_ROOT>/.gitignore",
-        ".huskyrc.js": "<PROJECT_ROOT>/.huskyrc.js",
-        ".lintstagedrc.js": "<PROJECT_ROOT>/.lintstagedrc.js",
-        ".np-config.js": "<PROJECT_ROOT>/.np-config.js",
+        ".husky/pre-commit": "<PROJECT_ROOT>/.husky/pre-commit",
+        ".husky/pre-push": "<PROJECT_ROOT>/.husky/pre-push",
+        ".lintstagedrc.cjs": "<PROJECT_ROOT>/.lintstagedrc.cjs",
+        ".np-config.cjs": "<PROJECT_ROOT>/.np-config.cjs",
         ".npmrc": "<PROJECT_ROOT>/.npmrc",
         ".prettierignore": "<PROJECT_ROOT>/.prettierignore",
-        ".prettierrc.js": "<PROJECT_ROOT>/.prettierrc.js",
+        ".prettierrc.cjs": "<PROJECT_ROOT>/.prettierrc.cjs",
         ".yarnrc": "<PROJECT_ROOT>/.yarnrc",
         "README.md": "<PROJECT_ROOT>/README.md",
         "appveyor.yml": "<PROJECT_ROOT>/appveyor.yml",
-        "jest.config.js": "<PROJECT_ROOT>/jest.config.js",
+        "jest.config.cjs": "<PROJECT_ROOT>/jest.config.cjs",
         "lib/preset-preset.js": "<PROJECT_ROOT>/lib/preset-preset.js",
         "lib/preset-preset.test.js": "<PROJECT_ROOT>/lib/preset-preset.test.js",
-        "wallaby.config.js": "<PROJECT_ROOT>/wallaby.config.js",
+        "wallaby.config.cjs": "<PROJECT_ROOT>/wallaby.config.cjs",
       },
-      "allowChanges": Object {
+      "allowChanges": {
         ".circleci/config.yml": false,
         ".editorconfig": false,
         ".eslintignore": false,
-        ".eslintrc.js": false,
+        ".eslintrc.cjs": false,
         ".gitattributes": false,
         ".gitignore": false,
-        ".huskyrc.js": false,
-        ".lintstagedrc.js": false,
-        ".np-config.js": false,
+        ".husky/pre-commit": false,
+        ".husky/pre-push": false,
+        ".lintstagedrc.cjs": false,
+        ".np-config.cjs": false,
         ".npmrc": false,
         ".prettierignore": false,
-        ".prettierrc.js": false,
+        ".prettierrc.cjs": false,
         ".yarnrc": false,
         "README.md": true,
         "appveyor.yml": false,
-        "jest.config.js": false,
+        "jest.config.cjs": false,
         "lib/preset-preset.js": true,
         "lib/preset-preset.test.js": true,
-        "wallaby.config.js": false,
+        "wallaby.config.cjs": false,
       },
-      "files": Array [
+      "files": [
         ".eslintignore",
         ".prettierignore",
         ".editorconfig",
-        ".lintstagedrc.js",
-        ".eslintrc.js",
-        ".prettierrc.js",
-        ".huskyrc.js",
+        ".lintstagedrc.cjs",
+        ".eslintrc.cjs",
+        ".prettierrc.cjs",
+        ".husky/pre-commit",
+        ".husky/pre-push",
         ".circleci/config.yml",
-        "wallaby.config.js",
-        "jest.config.js",
+        "wallaby.config.cjs",
+        "jest.config.cjs",
         "appveyor.yml",
         ".gitignore",
         ".gitattributes",
         ".npmrc",
         ".yarnrc",
-        ".np-config.js",
+        ".np-config.cjs",
         "README.md",
         "lib/preset-preset.js",
         "lib/preset-preset.test.js",
       ],
-      "ignoreUpdates": Object {
+      "ignoreUpdates": {
         ".circleci/config.yml": false,
         ".editorconfig": false,
         ".eslintignore": false,
-        ".eslintrc.js": false,
+        ".eslintrc.cjs": false,
         ".gitattributes": false,
         ".gitignore": false,
-        ".huskyrc.js": false,
-        ".lintstagedrc.js": false,
-        ".np-config.js": false,
+        ".husky/pre-commit": false,
+        ".husky/pre-push": false,
+        ".lintstagedrc.cjs": false,
+        ".np-config.cjs": false,
         ".npmrc": false,
         ".prettierignore": false,
-        ".prettierrc.js": false,
+        ".prettierrc.cjs": false,
         ".yarnrc": false,
         "README.md": true,
         "appveyor.yml": false,
-        "jest.config.js": false,
+        "jest.config.cjs": false,
         "lib/preset-preset.js": true,
         "lib/preset-preset.test.js": true,
-        "wallaby.config.js": false,
+        "wallaby.config.cjs": false,
       },
     },
-    "makeDirs": Array [
+    "makeDirs": [
       ".circleci",
+      ".husky",
       "lib/files",
     ],
-    "src": Object {
-      "absolute": Object {
+    "src": {
+      "absolute": {
         "lib/files/README.md": "<PROJECT_ROOT>/lib/files/README.md",
         "lib/files/package-entry-test.js": "<PROJECT_ROOT>/lib/files/package-entry-test.js",
         "lib/files/package-entry.js": "<PROJECT_ROOT>/lib/files/package-entry.js",
-        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "<PROJECT_ROOT>/node_modules/@backtrack/preset-git-hooks/lib/files/husky.js",
-        "node_modules/@backtrack/preset-jest/lib/files/appveyor-14+.yml": "<PROJECT_ROOT>/node_modules/@backtrack/preset-jest/lib/files/appveyor-14+.yml",
-        "node_modules/@backtrack/preset-jest/lib/files/circleci-14+.yml": "<PROJECT_ROOT>/node_modules/@backtrack/preset-jest/lib/files/circleci-14+.yml",
-        "node_modules/@backtrack/preset-jest/lib/files/jest.js": "<PROJECT_ROOT>/node_modules/@backtrack/preset-jest/lib/files/jest.js",
-        "node_modules/@backtrack/preset-jest/lib/files/wallaby.js": "<PROJECT_ROOT>/node_modules/@backtrack/preset-jest/lib/files/wallaby.js",
+        "node_modules/@backtrack/preset-git-hooks/lib/files/pre-commit": "<PROJECT_ROOT>/node_modules/@backtrack/preset-git-hooks/lib/files/pre-commit",
+        "node_modules/@backtrack/preset-git-hooks/lib/files/pre-push": "<PROJECT_ROOT>/node_modules/@backtrack/preset-git-hooks/lib/files/pre-push",
+        "node_modules/@backtrack/preset-jest/lib/files/appveyor-18+.yml": "<PROJECT_ROOT>/node_modules/@backtrack/preset-jest/lib/files/appveyor-18+.yml",
+        "node_modules/@backtrack/preset-jest/lib/files/circleci-18+.yml": "<PROJECT_ROOT>/node_modules/@backtrack/preset-jest/lib/files/circleci-18+.yml",
+        "node_modules/@backtrack/preset-jest/lib/files/jest.cjs": "<PROJECT_ROOT>/node_modules/@backtrack/preset-jest/lib/files/jest.cjs",
+        "node_modules/@backtrack/preset-jest/lib/files/wallaby.cjs": "<PROJECT_ROOT>/node_modules/@backtrack/preset-jest/lib/files/wallaby.cjs",
         "node_modules/@backtrack/preset-node/lib/files/gitattributes": "<PROJECT_ROOT>/node_modules/@backtrack/preset-node/lib/files/gitattributes",
         "node_modules/@backtrack/preset-node/lib/files/gitignore-module": "<PROJECT_ROOT>/node_modules/@backtrack/preset-node/lib/files/gitignore-module",
-        "node_modules/@backtrack/preset-node/lib/files/np-config.js": "<PROJECT_ROOT>/node_modules/@backtrack/preset-node/lib/files/np-config.js",
+        "node_modules/@backtrack/preset-node/lib/files/np-config.cjs": "<PROJECT_ROOT>/node_modules/@backtrack/preset-node/lib/files/np-config.cjs",
         "node_modules/@backtrack/preset-node/lib/files/npmrc-module": "<PROJECT_ROOT>/node_modules/@backtrack/preset-node/lib/files/npmrc-module",
         "node_modules/@backtrack/preset-node/lib/files/yarnrc-module": "<PROJECT_ROOT>/node_modules/@backtrack/preset-node/lib/files/yarnrc-module",
         "node_modules/@backtrack/preset-style/lib/files/editorconfig": "<PROJECT_ROOT>/node_modules/@backtrack/preset-style/lib/files/editorconfig",
-        "node_modules/@backtrack/preset-style/lib/files/eslint-node.js": "<PROJECT_ROOT>/node_modules/@backtrack/preset-style/lib/files/eslint-node.js",
+        "node_modules/@backtrack/preset-style/lib/files/eslint-node.cjs": "<PROJECT_ROOT>/node_modules/@backtrack/preset-style/lib/files/eslint-node.cjs",
         "node_modules/@backtrack/preset-style/lib/files/ignore": "<PROJECT_ROOT>/node_modules/@backtrack/preset-style/lib/files/ignore",
-        "node_modules/@backtrack/preset-style/lib/files/lint-staged.js": "<PROJECT_ROOT>/node_modules/@backtrack/preset-style/lib/files/lint-staged.js",
-        "node_modules/@backtrack/preset-style/lib/files/prettier.js": "<PROJECT_ROOT>/node_modules/@backtrack/preset-style/lib/files/prettier.js",
+        "node_modules/@backtrack/preset-style/lib/files/lint-staged.cjs": "<PROJECT_ROOT>/node_modules/@backtrack/preset-style/lib/files/lint-staged.cjs",
+        "node_modules/@backtrack/preset-style/lib/files/prettier.cjs": "<PROJECT_ROOT>/node_modules/@backtrack/preset-style/lib/files/prettier.cjs",
       },
-      "files": Array [
+      "files": [
         "node_modules/@backtrack/preset-style/lib/files/ignore",
         "node_modules/@backtrack/preset-style/lib/files/ignore",
         "node_modules/@backtrack/preset-style/lib/files/editorconfig",
-        "node_modules/@backtrack/preset-style/lib/files/lint-staged.js",
-        "node_modules/@backtrack/preset-style/lib/files/eslint-node.js",
-        "node_modules/@backtrack/preset-style/lib/files/prettier.js",
-        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js",
-        "node_modules/@backtrack/preset-jest/lib/files/circleci-14+.yml",
-        "node_modules/@backtrack/preset-jest/lib/files/wallaby.js",
-        "node_modules/@backtrack/preset-jest/lib/files/jest.js",
-        "node_modules/@backtrack/preset-jest/lib/files/appveyor-14+.yml",
+        "node_modules/@backtrack/preset-style/lib/files/lint-staged.cjs",
+        "node_modules/@backtrack/preset-style/lib/files/eslint-node.cjs",
+        "node_modules/@backtrack/preset-style/lib/files/prettier.cjs",
+        "node_modules/@backtrack/preset-git-hooks/lib/files/pre-commit",
+        "node_modules/@backtrack/preset-git-hooks/lib/files/pre-push",
+        "node_modules/@backtrack/preset-jest/lib/files/circleci-18+.yml",
+        "node_modules/@backtrack/preset-jest/lib/files/wallaby.cjs",
+        "node_modules/@backtrack/preset-jest/lib/files/jest.cjs",
+        "node_modules/@backtrack/preset-jest/lib/files/appveyor-18+.yml",
         "node_modules/@backtrack/preset-node/lib/files/gitignore-module",
         "node_modules/@backtrack/preset-node/lib/files/gitattributes",
         "node_modules/@backtrack/preset-node/lib/files/npmrc-module",
         "node_modules/@backtrack/preset-node/lib/files/yarnrc-module",
-        "node_modules/@backtrack/preset-node/lib/files/np-config.js",
+        "node_modules/@backtrack/preset-node/lib/files/np-config.cjs",
         "lib/files/README.md",
         "lib/files/package-entry.js",
         "lib/files/package-entry-test.js",
       ],
-      "hash": Object {
+      "hash": {
         "lib/files/README.md": "ignoreUpdates",
         "lib/files/package-entry-test.js": "ignoreUpdates",
         "lib/files/package-entry.js": "ignoreUpdates",
-        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "b242a598aa796a3ac2dc5cc64b83ba86ac5260414a591bb09b5ab6b4f7c027fe",
-        "node_modules/@backtrack/preset-jest/lib/files/appveyor-14+.yml": "25e43fbd67f7d31b81155aca953154dc7a03f94adfb66be204ed0787d9ce5eb9",
-        "node_modules/@backtrack/preset-jest/lib/files/circleci-14+.yml": "894cae5fac31edbcf0eb666ce0b231305db91f098a9921f41a2f3e4cc4b747fe",
-        "node_modules/@backtrack/preset-jest/lib/files/jest.js": "849190b5138d25fa0849678fb4a3c818fb0dccffbe6a86732713a18c4cc06b6d",
-        "node_modules/@backtrack/preset-jest/lib/files/wallaby.js": "1685bb89c5e60c303b9a319b3ee52766bfc0c0b7cf5a2c0e5f8e67a0e8febeba",
+        "node_modules/@backtrack/preset-git-hooks/lib/files/pre-commit": "e4add719772b9da7940f03a22d607f8c8c86a543b9260739f9a8143b89007597",
+        "node_modules/@backtrack/preset-git-hooks/lib/files/pre-push": "bd2849b7a84e41755e4c74b1a3d0640914f2cf1a1a4373640aa8d6308a3c53ee",
+        "node_modules/@backtrack/preset-jest/lib/files/appveyor-18+.yml": "6aa9016d30e25bc337b46ce7a9e7dd84272410415dfa539a0dda7070c1f41259",
+        "node_modules/@backtrack/preset-jest/lib/files/circleci-18+.yml": "8c0cfd70d0df0bcc72810dda6b2e99a5fffa2545ac9a9827e0f5fbcd9e2feae5",
+        "node_modules/@backtrack/preset-jest/lib/files/jest.cjs": "849190b5138d25fa0849678fb4a3c818fb0dccffbe6a86732713a18c4cc06b6d",
+        "node_modules/@backtrack/preset-jest/lib/files/wallaby.cjs": "1685bb89c5e60c303b9a319b3ee52766bfc0c0b7cf5a2c0e5f8e67a0e8febeba",
         "node_modules/@backtrack/preset-node/lib/files/gitattributes": "f511b169e2a0b7529ac2887dffad3b04a16b954209edf18fec7f8911a81ad17d",
         "node_modules/@backtrack/preset-node/lib/files/gitignore-module": "8791c419e79de53e5c2eefa59ab16b52b5413bd08da46be94e9e6cc3153a17a0",
-        "node_modules/@backtrack/preset-node/lib/files/np-config.js": "f1e82191dea83526e85a98a48c5b974b59e6e99293e864d0a1d02d5999e6a675",
+        "node_modules/@backtrack/preset-node/lib/files/np-config.cjs": "f1e82191dea83526e85a98a48c5b974b59e6e99293e864d0a1d02d5999e6a675",
         "node_modules/@backtrack/preset-node/lib/files/npmrc-module": "f535d8452d57a9d969bc54c2eaa831f3e20ccb5c3dbeeabc6f613d27a4b5a28a",
         "node_modules/@backtrack/preset-node/lib/files/yarnrc-module": "feed5a1b1413c2d27507ed09e7d1c21fb40e0f8aca947c0620793b7e187e8ba4",
-        "node_modules/@backtrack/preset-style/lib/files/editorconfig": "0b9d5ddd3464226f6c635fce4d987914b5a03ffcfebb6425c7e91eb72bb0299f",
-        "node_modules/@backtrack/preset-style/lib/files/eslint-node.js": "00aed0fb026ab32804ce28d202a5e8ff43d5ef238ab938774c34b19fd6c1047b",
-        "node_modules/@backtrack/preset-style/lib/files/ignore": "73a2c88868e2d07e67d56a7678a7cff9b19d375996830bc055e5048a3a995c7f",
-        "node_modules/@backtrack/preset-style/lib/files/lint-staged.js": "f7164bc680954569d44960627d963bfcc542cd9f7635a239b30ca077a5884abd",
-        "node_modules/@backtrack/preset-style/lib/files/prettier.js": "f4a7656974038636db7c4488f4953c6c6179975b17cda28b2b1b2792766ae512",
+        "node_modules/@backtrack/preset-style/lib/files/editorconfig": "c8e06355ec368086c1313bda19033a9e5d8a920d27dbf91a97fc509a0d2d8e3b",
+        "node_modules/@backtrack/preset-style/lib/files/eslint-node.cjs": "00aed0fb026ab32804ce28d202a5e8ff43d5ef238ab938774c34b19fd6c1047b",
+        "node_modules/@backtrack/preset-style/lib/files/ignore": "cc67305578620b791ded1c8aed0f3c39db17c4643c760d09408e18eadb1d7a37",
+        "node_modules/@backtrack/preset-style/lib/files/lint-staged.cjs": "bc49af6b82be36d6b1ef246bd20ce41a5726b59701584ad6fc57ce28c8ea6785",
+        "node_modules/@backtrack/preset-style/lib/files/prettier.cjs": "105ba088ab96fe3b965231970dc8db9904de34ff9a9febff5a071d8220b74701",
       },
     },
   },
-  "format": Array [
-    "prettier \\"**/*.{js,mjs,jsx,ts,tsx,json,scss,less,css,md,yml,yaml}\\" --write",
+  "format": [
+    "prettier "**/*" --ignore-unknown --write",
   ],
-  "git-pre-commit": Array [
+  "git-pre-commit": [
     [Function noop],
     "lint-staged",
     [Function noop],
     "backtrack test",
   ],
-  "git-pre-push": Array [
+  "git-pre-push": [
     [Function noop],
     "backtrack lint",
-    "prettier \\"**/*.{js,mjs,jsx,ts,tsx,json,scss,less,css,md,yml,yaml}\\" --check",
+    "prettier "**/*" --ignore-unknown --check",
     [Function noop],
     "backtrack test",
   ],
-  "lint": Array [
-    "eslint --ext .js,.jsx,.mjs,.ts,.tsx .",
+  "lint": [
+    "eslint --ext .js,.jsx,.mjs,.cjs,.ts,.tsx,.mts,.cts .",
   ],
-  "lint.fix": Array [
-    "eslint --ext .js,.jsx,.mjs,.ts,.tsx --fix .",
-    "prettier \\"**/*.{js,mjs,jsx,ts,tsx,json,scss,less,css,md,yml,yaml}\\" --write",
+  "lint.fix": [
+    "eslint --ext .js,.jsx,.mjs,.cjs,.ts,.tsx,.mts,.cts --fix .",
+    "prettier "**/*" --ignore-unknown --write",
   ],
-  "packageJson": Array [
-    Object {
-      "scripts": Object {
+  "packageJson": [
+    {
+      "scripts": {
         "test.update": "jest --update-snapshot",
         "test.watch": "jest --watch --pass-with-no-tests",
       },
     },
-    Object {
-      "engines": Object {
-        "node": ">=14.15.0",
+    {
+      "engines": {
+        "node": ">=18.12.0",
       },
-      "files": Array [
+      "files": [
         "lib/",
       ],
       "main": "lib/preset-preset.js",
+      "module": "commonjs",
       "private": false,
     },
   ],
-  "prepublishOnly": Array [
+  "prepublishOnly": [
     "backtrack lint",
-    "prettier \\"**/*.{js,mjs,jsx,ts,tsx,json,scss,less,css,md,yml,yaml}\\" --check",
+    "prettier "**/*" --ignore-unknown --check",
   ],
-  "release": Array [
+  "release": [
     "np",
   ],
-  "resolve": Object {
+  "resolve": {
     "@backtrack/preset-git-hooks": "<PROJECT_ROOT>/node_modules/@backtrack/preset-git-hooks/lib",
     "@backtrack/preset-jest": "<PROJECT_ROOT>/node_modules/@backtrack/preset-jest/lib",
     "@backtrack/preset-node": "<PROJECT_ROOT>/node_modules/@backtrack/preset-node/lib",
     "@backtrack/preset-preset": "<PROJECT_ROOT>/lib",
     "@backtrack/preset-style": "<PROJECT_ROOT>/node_modules/@backtrack/preset-style/lib",
   },
-  "test": Array [
+  "test": [
     "jest --pass-with-no-tests",
   ],
-  "test.ci": Array [
+  "test.ci": [
     "jest --ci --no-cache --coverage --max-workers 2",
-    Object {
-      "name": "codecov",
-      "task": "codecov",
-    },
   ],
-  "test.ci-pretest": Array [
+  "test.ci-pretest": [
     [Function noop],
     "backtrack lint",
   ],

@@ -12,12 +12,13 @@
 	"homepage": "https://github.com/chrisblossom/backtrack-preset-preset",
 	"author": "Chris Blossom",
 	"engines": {
-		"node": ">=14.15.0"
+		"node": ">=18.12.0"
 	},
 	"files": [
 		"lib/"
 	],
 	"main": "lib/preset-preset.js",
+	"module": "commonjs",
 	"scripts": {
 		"check.all": "backtrack check.all",
 		"format": "backtrack format",
@@ -41,7 +42,7 @@
 	},
 	"dependencies": {
 		"@backtrack/jest-serializer-preset": "^0.1.4",
-		"@backtrack/preset-node": "^0.9.0",
+		"@backtrack/preset-node": "^0.10.2",
 		"read-pkg": "^5.2.0"
 	}
 }
