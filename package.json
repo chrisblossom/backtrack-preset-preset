@@ -1,47 +1,47 @@
 {
-  "name": "@backtrack/preset-preset",
-  "version": "0.8.0",
-  "description": "Preset for backtrack to create backtrack presets",
-  "keywords": [
-    "backtrack",
-    "preset"
-  ],
-  "license": "MIT",
-  "private": false,
-  "repository": "chrisblossom/backtrack-preset-preset",
-  "homepage": "https://github.com/chrisblossom/backtrack-preset-preset",
-  "author": "Chris Blossom",
-  "engines": {
-    "node": ">=14.15.0"
-  },
-  "files": [
-    "lib/"
-  ],
-  "main": "lib/preset-preset.js",
-  "scripts": {
-    "check.all": "backtrack check.all",
-    "format": "backtrack format",
-    "git-pre-commit": "backtrack git-pre-commit",
-    "git-pre-push": "backtrack git-pre-push",
-    "lint": "backtrack lint",
-    "lint.fix": "backtrack lint.fix",
-    "prepublishOnly": "backtrack prepublishOnly",
-    "release": "backtrack release",
-    "test": "backtrack test",
-    "test.ci": "backtrack test.ci",
-    "test.ci-pretest": "backtrack test.ci-pretest",
-    "test.update": "jest --update-snapshot",
-    "test.watch": "jest --watch --pass-with-no-tests"
-  },
-  "peerDependencies": {
-    "@backtrack/core": ">=0.2.1"
-  },
-  "devDependencies": {
-    "@backtrack/core": "^0.2.1"
-  },
-  "dependencies": {
-    "@backtrack/jest-serializer-preset": "^0.1.4",
-    "@backtrack/preset-node": "^0.9.0",
-    "read-pkg": "^5.2.0"
-  }
+	"name": "@backtrack/preset-preset",
+	"version": "0.8.0",
+	"description": "Preset for backtrack to create backtrack presets",
+	"keywords": [
+		"backtrack",
+		"preset"
+	],
+	"license": "MIT",
+	"private": false,
+	"repository": "chrisblossom/backtrack-preset-preset",
+	"homepage": "https://github.com/chrisblossom/backtrack-preset-preset",
+	"author": "Chris Blossom",
+	"engines": {
+		"node": ">=14.15.0"
+	},
+	"files": [
+		"lib/"
+	],
+	"main": "lib/preset-preset.js",
+	"scripts": {
+		"check.all": "backtrack check.all",
+		"format": "backtrack format",
+		"git-pre-commit": "backtrack git-pre-commit",
+		"git-pre-push": "backtrack git-pre-push",
+		"lint": "backtrack lint",
+		"lint.fix": "backtrack lint.fix",
+		"prepublishOnly": "backtrack prepublishOnly",
+		"release": "backtrack release",
+		"test": "backtrack test",
+		"test.ci": "backtrack test.ci",
+		"test.ci-pretest": "backtrack test.ci-pretest",
+		"test.update": "jest --update-snapshot",
+		"test.watch": "jest --watch --pass-with-no-tests"
+	},
+	"peerDependencies": {
+		"@backtrack/core": ">=0.2.1"
+	},
+	"devDependencies": {
+		"@backtrack/core": "^0.2.1"
+	},
+	"dependencies": {
+		"@backtrack/jest-serializer-preset": "^0.1.4",
+		"@backtrack/preset-node": "^0.9.0",
+		"read-pkg": "^5.2.0"
+	}
 }
