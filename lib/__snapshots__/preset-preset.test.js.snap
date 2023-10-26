@@ -20,7 +20,7 @@ exports[`preset returns expected config 1`] = `
       },
       "jest": {
         "snapshotSerializers": [
-          "<PROJECT_ROOT>/node_modules/@backtrack/jest-serializer-preset/dist/jest-serializer-preset.js",
+          "<PROJECT_ROOT>/node_modules/@backtrack/jest-serializer-preset/lib/jest-serializer-preset.js",
         ],
       },
       "wallaby": [Function wallaby],
