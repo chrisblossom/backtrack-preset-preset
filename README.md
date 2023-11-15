@@ -1,9 +1,6 @@
 # @backtrack/preset-preset
 
 [![npm](https://img.shields.io/npm/v/@backtrack/preset-preset.svg?label=npm%20version)](https://www.npmjs.com/package/@backtrack/preset-preset)
-[![Linux Build Status](https://img.shields.io/circleci/project/github/chrisblossom/backtrack-preset-preset/master.svg?label=linux%20build)](https://circleci.com/gh/chrisblossom/backtrack-preset-preset/tree/master)
-[![Windows Build Status](https://img.shields.io/appveyor/ci/chrisblossom/backtrack-preset-preset/master.svg?label=windows%20build)](https://ci.appveyor.com/project/chrisblossom/backtrack-preset-preset/branch/master)
-[![Code Coverage](https://img.shields.io/codecov/c/github/chrisblossom/backtrack-preset-preset/master.svg)](https://codecov.io/gh/chrisblossom/backtrack-preset-preset/branch/master)
 
 ## About
 

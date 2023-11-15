@@ -42,7 +42,7 @@
 	},
 	"dependencies": {
 		"@backtrack/jest-serializer-preset": "^0.2.0",
-		"@backtrack/preset-node": "^0.10.2",
+		"@backtrack/preset-node": "^0.11.0",
 		"read-pkg": "^5.2.0"
 	}
 }
